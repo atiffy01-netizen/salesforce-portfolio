@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Atif — Full Stack Developer & Salesforce Specialist</title>
+  <meta name="description" content="Portfolio of M. Atif — Full Stack Developer and Salesforce Specialist. Skilled in Salesforce, Apex, Flow, Web Technologies and AI Automation.">
+  <meta name="keywords" content="Atif, Full Stack Developer, Salesforce Developer, Apex, Salesforce Flow, Aptech, Software Engineering, Web Developer">
+  <meta name="author" content="M. Atif">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:title" content="M. Atif — Full Stack Developer & Salesforce Specialist">
+  <meta property="og:description" content="Full Stack Developer & Salesforce Specialist | Software Engineering student at Aptech.">
+  <meta property="og:type" content="website">
+
+  <link rel="preload" as="image" href="assets/atif.jpg" fetchpriority="high">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+  <!-- Font Awesome -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════════════════ -->
+<header class="nav" id="navbar">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-icon">M</span>
+      <span class="nav__logo-text">ATIF</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active" data-section="home">Home</a>
+      <a href="#about" class="nav__link" data-section="about">About</a>
+      <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+      <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+      <a href="#education" class="nav__link" data-section="education">Education</a>
+      <a href="#services" class="nav__link" data-section="services">Services</a>
+      <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <a href="#contact" class="btn btn--glow btn--sm">
+        <span>Let's Talk</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <a href="#home" class="mobile-menu__link">Home</a>
+  <a href="#about" class="mobile-menu__link">About</a>
+  <a href="#skills" class="mobile-menu__link">Skills</a>
+  <a href="#projects" class="mobile-menu__link">Projects</a>
+  <a href="#education" class="mobile-menu__link">Education</a>
+  <a href="#services" class="mobile-menu__link">Services</a>
+  <a href="#contact" class="mobile-menu__link">Contact</a>
+  <a href="#contact" class="btn btn--glow mobile-menu__cta">Let's Talk</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <!-- Left Content -->
+    <div class="hero__content" data-reveal="left">
+      <div class="hero__tag">
+        <span class="pulse-dot"></span>
+        Available for Internships &amp; Freelance
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__line">Hi, I'm</span>
+        <span class="hero__name">M. Atif</span>
+      </h1>
+
+      <div class="hero__typewriter" aria-live="polite">
+        <span class="hero__static">I build </span>
+        <span class="hero__typed" id="typedText"></span>
+        <span class="hero__cursor">|</span>
+      </div>
+
+      <p class="hero__desc">
+        Full Stack Developer &amp; Salesforce Specialist studying Software Engineering at
+        <strong>Aptech</strong>. I design clean, automated, scalable solutions — from Apex
+        logic and Lightning Web Components to modern web applications.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--glow">
+          <span>Explore My Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <span>Let's Talk</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong class="hero__stat-num counter" data-target="9">0</strong>
+          <span>Skills</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong class="hero__stat-num counter" data-target="2">0</strong>
+          <span>Projects</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong class="hero__stat-num" style="font-size:16px">Aptech</strong>
+          <span>Institute</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="hero__visual" data-reveal="right">
+      <div class="hero__frame">
+        <!-- Premium Portrait Card -->
+        <article class="profile-card" aria-label="Portrait card for M. Atif">
+          <div class="profile-card__media">
+            <span class="profile-card__tag">Portfolio · 2026</span>
+            <div class="profile-card__light" aria-hidden="true"></div>
+            <span class="profile-card__ring" aria-hidden="true"></span>
+            <span class="profile-card__ring profile-card__ring--sm" aria-hidden="true"></span>
+          
+                 <img class="profile-card__photo" src="assets/atif.jpg" alt="M. Atif" width="640" height="853" decoding="async" fetchpriority="high">
+            <div class="profile-card__grain" aria-hidden="true"></div>
+            <div class="profile-card__caption">
+              <span class="profile-card__name">M. Atif</span>
+              <span class="profile-card__role">Full Stack Developer &amp; Salesforce Specialist</span>
+            </div>
+          </div>
+          <div class="profile-card__meta">
+            <span class="profile-card__status">
+              <span class="pulse-dot pulse-dot--green"></span> Open to Opportunities
+            </span>
+            <span class="profile-card__location"><i class="fa-solid fa-location-dot"></i> Pakistan</span>
+          </div>
+        </article>
+
+        <!-- Vertical Skills Panel -->
+        <aside class="hero-skills" aria-label="Core technologies">
+          <span class="hero-skills__label">Core Stack</span>
+          <ul class="hero-skills__list">
+            <li class="hero-skill">
+              <span class="hero-skill__icon"><i class="fa-solid fa-cloud"></i></span>
+              <span class="hero-skill__name">Salesforce</span>
+            </li>
+            <li class="hero-skill">
+              <span class="hero-skill__icon"><i class="fa-solid fa-code"></i></span>
+              <span class="hero-skill__name">Apex</span>
+            </li>
+            <li class="hero-skill">
+              <span class="hero-skill__icon"><i class="fa-solid fa-bolt"></i></span>
+              <span class="hero-skill__name">LWC</span>
+            </li>
+            <li class="hero-skill">
+              <span class="hero-skill__icon"><i class="fa-solid fa-database"></i></span>
+              <span class="hero-skill__name">SQL</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO INFORMATION STRIP
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero-strip" aria-label="Portfolio highlights">
+  <div class="container">
+    <div class="info-bar" data-reveal>
+      <a href="#education" class="info-card">
+        <span class="info-card__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span class="info-card__body">
+          <span class="info-card__eyebrow">Education</span>
+          <strong>Aptech Institute</strong>
+          <span class="info-card__sub">Software Engineering</span>
+        </span>
+        <i class="info-card__arrow fa-solid fa-arrow-right"></i>
+      </a>
+
+      <a href="#projects" class="info-card">
+        <span class="info-card__icon"><i class="fa-solid fa-layer-group"></i></span>
+        <span class="info-card__body">
+          <span class="info-card__eyebrow">My Projects</span>
+          <strong><span class="counter" data-target="2">0</span> Projects</strong>
+          <span class="info-card__sub">Built &amp; shipped end-to-end</span>
+        </span>
+        <i class="info-card__arrow fa-solid fa-arrow-right"></i>
+      </a>
+
+      <a href="#skills" class="info-card">
+        <span class="info-card__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <span class="info-card__body">
+          <span class="info-card__eyebrow">My Skills</span>
+          <strong>Salesforce Development</strong>
+          <span class="info-card__sub">+ Software Engineering</span>
+        </span>
+        <i class="info-card__arrow fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TECH MARQUEE
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span class="marquee__item"><i class="fa-solid fa-cloud"></i> Salesforce</span>
+      <span class="marquee__item"><i class="fa-solid fa-code"></i> Apex</span>
+      <span class="marquee__item"><i class="fa-solid fa-diagram-project"></i> Flow</span>
+      <span class="marquee__item"><i class="fa-brands fa-html5"></i> HTML5</span>
+      <span class="marquee__item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+      <span class="marquee__item"><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span class="marquee__item"><i class="fa-solid fa-database"></i> SQL</span>
+      <span class="marquee__item"><i class="fa-solid fa-network-wired"></i> n8n</span>
+    </div>
+    <div class="marquee__group">
+      <span class="marquee__item"><i class="fa-solid fa-cloud"></i> Salesforce</span>
+      <span class="marquee__item"><i class="fa-solid fa-code"></i> Apex</span>
+      <span class="marquee__item"><i class="fa-solid fa-diagram-project"></i> Flow</span>
+      <span class="marquee__item"><i class="fa-brands fa-html5"></i> HTML5</span>
+      <span class="marquee__item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+      <span class="marquee__item"><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span class="marquee__item"><i class="fa-solid fa-database"></i> SQL</span>
+      <span class="marquee__item"><i class="fa-solid fa-network-wired"></i> n8n</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about__grid">
+      <!-- Left: Text -->
+      <div class="about__text" data-reveal="left">
+        <div class="section__badge">About Me</div>
+        <h2 class="section__title">Passionate about building things that <em>actually work</em></h2>
+
+        <p>I'm <strong>M. Atif</strong>, a Software Engineering student at <strong>Aptech</strong>
+          focused on becoming a proficient <strong>Salesforce Developer &amp; Administrator</strong>.
+          My core strength is the Salesforce ecosystem — org configuration, Flow automation, and
+          custom Apex logic.</p>
+        <p>Beyond Salesforce, I build solid web foundations with <strong>HTML, CSS, JavaScript</strong>
+          and backend systems with <strong>PHP &amp; MySQL</strong>. I love connecting everything
+          end-to-end: databases, APIs, automations and interfaces working together seamlessly.</p>
+        <p>I am early in my career but not early in my effort — consistent hands-on practice,
+          real projects and a drive to keep building define where I am right now.</p>
+
+        <div class="about__chips">
+          <span class="chip"><i class="fa-solid fa-shield-halved"></i> Salesforce Admin</span>
+          <span class="chip"><i class="fa-solid fa-code"></i> Apex</span>
+          <span class="chip"><i class="fa-solid fa-diagram-project"></i> Flow</span>
+                    <span class="chip"><i class="fa-solid fa-database"></i>LWC</span>
+          <span class="chip"><i class="fa-solid fa-globe"></i> Web Dev</span>
+          <span class="chip"><i class="fa-solid fa-database"></i>SQL</span>
+          <span class="chip"><i class="fa-solid fa-robot"></i> AI &amp; n8n</span>
+        </div>
+      </div>
+
+      <!-- Right: ID Card -->
+      <div class="about__card" data-reveal="right">
+        <div class="id-card">
+          <div class="id-card__glow"></div>
+          <div class="id-card__header">
+            <div class="id-card__avatar"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <div class="id-card__name">M. Atif</div>
+              <div class="id-card__role">Salesforce Developer &amp; Admin</div>
+            </div>
+          </div>
+          <div class="id-card__rows">
+            <div class="id-card__row">
+              <span class="id-card__label">INSTITUTE</span>
+              <span class="id-card__value">Aptech</span>
+            </div>
+            <div class="id-card__row">
+              <span class="id-card__label">PROGRAM</span>
+              <span class="id-card__value">Software Engineering</span>
+            </div>
+            <div class="id-card__row">
+              <span class="id-card__label">LOCATION</span>
+              <span class="id-card__value">Pakistan</span>
+            </div>
+            <div class="id-card__row">
+              <span class="id-card__label">STATUS</span>
+              <span class="id-card__value id-card__value--green">
+                <span class="pulse-dot pulse-dot--green"></span>Open to Opportunities
+              </span>
+            </div>
+            <div class="id-card__row">
+              <span class="id-card__label">EMAIL</span>
+              <span class="id-card__value"><a href="mailto:atifzuhrani@gmail.com">atifzuhrani@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="id-card__socials">
+            <a href="https://github.com/atiffy01-netizen" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/atif-zuhrani-7a373640b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://trailhead.salesforce.com/today" target="_blank" rel="noopener" aria-label="Trailhead"><i class="fa-solid fa-cloud"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="skills" class="section section--dark">
+  <div class="container">
+    <div class="section__header section__header--center" data-reveal>
+      <div class="section__badge section__badge--light">Technical Skills</div>
+      <h2 class="section__title section__title--light">Technologies I Work With</h2>
+      <p class="section__sub section__sub--light">Salesforce-centric skills backed by solid web, backend and automation tooling.</p>
+    </div>
+
+    <div class="skills__grid" data-reveal>
+      <div class="skill-card" style="--delay:0">
+        <div class="skill-card__icon"><i class="fa-solid fa-cloud"></i></div>
+        <div class="skill-card__info"><h4>Salesforce</h4><span>Platform Fundamentals</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="78"></div></div><span>78%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:1">
+        <div class="skill-card__icon"><i class="fa-solid fa-user-gear"></i></div>
+        <div class="skill-card__info"><h4>Salesforce Admin</h4><span>Org Config &amp; Security</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="75"></div></div><span>75%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:2">
+        <div class="skill-card__icon"><i class="fa-solid fa-code"></i></div>
+        <div class="skill-card__info"><h4>Apex</h4><span>Custom Logic &amp; Triggers</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="65"></div></div><span>65%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:3">
+        <div class="skill-card__icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="skill-card__info"><h4>Salesforce Flow</h4><span>Process Automation</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="70"></div></div><span>70%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:4">
+        <div class="skill-card__icon"><i class="fa-brands fa-html5"></i></div>
+        <div class="skill-card__info"><h4>HTML5</h4><span>Semantic Markup</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="88"></div></div><span>88%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:5">
+        <div class="skill-card__icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="skill-card__info"><h4>CSS3</h4><span>Responsive Styling</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="70"></div></div><span>70%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:6">
+        <div class="skill-card__icon"><i class="fa-brands fa-js"></i></div>
+        <div class="skill-card__info"><h4>JavaScript</h4><span>Interactive UI</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="60"></div></div><span>40%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:8">
+        <div class="skill-card__icon"><i class="fa-solid fa-database"></i></div>
+        <div class="skill-card__info"><h4>SQL</h4><span>Relational Databases</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="70"></div></div><span>70%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:9">
+        <div class="skill-card__icon"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="skill-card__info"><h4>n8n</h4><span>Workflow Automation</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="58"></div></div><span>30%</span></div>
+      </div>
+      <div class="skill-card" style="--delay:11">
+        <div class="skill-card__icon"><i class="fa-solid fa-terminal"></i></div>
+        <div class="skill-card__info"><h4>Prompt Eng.</h4><span>LLM &amp; AI Design</span></div>
+        <div class="skill-card__bar"><div class="skill-card__track"><div class="skill-card__fill" data-level="40"></div></div><span>40%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PROJECTS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section__header" data-reveal>
+      <div class="section__badge">Featured Projects</div>
+      <h2 class="section__title">Things I've Been Building</h2>
+    </div>
+
+    <div class="projects__grid" data-reveal>
+
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-card__preview">
+          <div class="project-card__browser">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url"><i class="fa-solid fa-lock"></i> trailhead.salesforce.com</div>
+          </div>
+          <div class="project-card__mockup">
+            <div class="mockup-title">Trailhead Profile Explorer</div>
+            <div class="mockup-metrics">
+              <div class="mockup-box"><strong>Ranger</strong><span>Rank</span></div>
+              <div class="mockup-box"><strong>Labs</strong><span>Hands-on</span></div>
+              <div class="mockup-box"><strong>Flow</strong><span>Focus</span></div>
+            </div>
+            <div class="mockup-flow">
+              <span><i class="fa-solid fa-shield-halved"></i> Security</span>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span><i class="fa-solid fa-robot"></i> Agentforce</span>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span><i class="fa-solid fa-bolt"></i> Automation</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <div class="project-card__badge">Platform Learning</div>
+          <h3>Salesforce Trailhead Profile</h3>
+          <p>Passionate continuous learner completing Salesforce Administration, Flow Automation, Data Management and Agentforce modules and projects.</p>
+          <div class="project-card__tags">
+            <span>Salesforce Admin</span><span>Agentforce</span><span>Flow Builder</span><span>Data Security</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://trailhead.salesforce.com/today" target="_blank" rel="noopener" class="btn btn--glow btn--sm">View Profile</a>
+            <a href="#contact" class="btn btn--ghost btn--sm">My Progress</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-card__preview">
+          <div class="project-card__browser">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url"><i class="fa-solid fa-lock"></i> btkproperties.pk</div>
+          </div>
+          <div class="project-card__mockup">
+            <div class="mockup-title">Real Estate CRM — BTK Properties</div>
+            <div class="mockup-metrics">
+              <div class="mockup-box"><strong>Auto</strong><span>Lead Capture</span></div>
+              <div class="mockup-box"><strong>Flow</strong><span>Routing</span></div>
+              <div class="mockup-box"><strong>Live</strong><span>Production</span></div>
+            </div>
+            <div class="mockup-flow">
+              <span><i class="fa-solid fa-globe"></i> Web-to-Lead</span>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span><i class="fa-solid fa-filter"></i> Fields</span>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span><i class="fa-solid fa-user-check"></i> Assign</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <div class="project-card__badge">Production CRM</div>
+          <h3>Real Estate Lead Management System</h3>
+          <p>Salesforce-based CRM for BTK Properties — structured data management, custom lead fields, Web-to-Lead capture, and automated follow-up via Flow.</p>
+          <div class="project-card__tags">
+            <span>Salesforce CRM</span><span>Web-to-Lead</span><span>Flow Automation</span><span>Production Setup</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://btkproperties.pk/" target="_blank" rel="noopener" class="btn btn--glow btn--sm">Visit Website</a>
+            <a href="#contact" class="btn btn--ghost btn--sm">Case Study</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TRAILHEAD ACHIEVEMENTS
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section trailhead" aria-labelledby="trailhead-title">
+  <div class="container">
+    <div class="section__header section__header--center" data-reveal>
+      <div class="section__badge section__badge--trailhead">
+        <i class="fa-solid fa-award"></i> Trailhead Achievements
+      </div>
+      <h2 class="section__title section__title--light" id="trailhead-title">Learning, <em>badge by badge</em></h2>
+      <p class="section__sub section__sub--light">Verified progress from my public Salesforce Trailhead profile — earned through hands-on modules, trails and projects.</p>
+    </div>
+
+    <div class="trailhead__stats" data-reveal>
+      <article class="th-stat">
+        <span class="th-stat__icon"><i class="fa-solid fa-medal"></i></span>
+        <strong class="th-stat__value counter" data-target="146">0</strong>
+        <span class="th-stat__label">Badges Earned</span>
+      </article>
+      <article class="th-stat">
+        <span class="th-stat__icon"><i class="fa-solid fa-star"></i></span>
+        <strong class="th-stat__value counter" data-target="72550" data-format="comma">0</strong>
+        <span class="th-stat__label">Points</span>
+      </article>
+      <article class="th-stat">
+        <span class="th-stat__icon"><i class="fa-solid fa-route"></i></span>
+        <strong class="th-stat__value counter" data-target="10">0</strong>
+        <span class="th-stat__label">Trails Completed</span>
+      </article>
+      <article class="th-stat th-stat--rank">
+        <span class="th-stat__icon"><i class="fa-solid fa-crown"></i></span>
+        <strong class="th-stat__value th-stat__value--rank">Ranger</strong>
+        <span class="th-stat__label">Current Rank</span>
+      </article>
+    </div>
+
+    <div class="trailhead__showcase" data-reveal>
+      <div class="trailhead__showcase-head">
+        <div>
+          <h3 class="trailhead__showcase-title">Recently Earned Badges</h3>
+          <p class="trailhead__showcase-sub">A selection from my verified Trailhead achievements.</p>
+        </div>
+        <a href="https://www.salesforce.com/trailblazer/fbzqe04czja6iwmf0d" target="_blank" rel="noopener noreferrer" class="trailhead__all">
+          View All Badges <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="trailhead__badges">
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-service-agent-quick-look/1acac0668f3be3d32ce5d86d9fe5097b_badge.png" alt="Agentforce for Service badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Agentforce for Service</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/einstein-copilot-quick-look/8ad204e20d8d6290cef69ddf92988908_badge.png" alt="Agentforce: Quick Look badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Agentforce: Quick Look</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/generative-ai-basics/0248fd867bc9e6f03b0562e4e43f2595_badge.png" alt="Generative AI Basics badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Generative AI Basics</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/customer-service-incident-management-basics/867751d5018bf3607eaf6bf749c4ce2c_badge.png" alt="Customer Service Incident Management Basics badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Service Incident Management</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/swarming-with-slack-basics/8f4a5bdc1a8152c33547f34a1b629883_badge.png" alt="Slack Swarming badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Slack Swarming</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/slack-first-service/e9c63191d4edd5d0eedc66e546f855be_badge.png" alt="Slack for Service badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Slack for Service</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/115b6aacb3730a9b8bb1b73c0f45083f_badge.png" alt="Prompt Builder Basics badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Prompt Builder Basics</figcaption>
+        </figure>
+        <figure class="th-badge">
+          <span class="th-badge__frame">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-studio-quick-look/66e2b1a9c239dc9f98a2bc34e664947f_badge.png" alt="Prompt Builder: Quick Look badge" loading="lazy" decoding="async" width="120" height="120">
+          </span>
+          <figcaption>Prompt Builder: Quick Look</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="trailhead__cta" data-reveal>
+      <div class="trailhead__cta-text">
+        <span class="trailhead__cta-eyebrow"><span class="pulse-dot"></span> Verified Profile</span>
+        <p>See the complete, up-to-date record of my Trailhead journey on Salesforce.</p>
+      </div>
+      <a href="https://www.salesforce.com/trailblazer/fbzqe04czja6iwmf0d" target="_blank" rel="noopener noreferrer" class="btn btn--lavender">
+        <span>View Trailhead Profile</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     EDUCATION
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="edu__grid">
+      <div class="edu__left" data-reveal="left">
+        <div class="section__badge">Education</div>
+        <h2 class="section__title">Where I'm Learning</h2>
+        <p class="edu__desc">Formal software engineering backed by consistent hands-on practice and real-world projects every day.</p>
+
+        <div class="edu__card">
+          <div class="edu__card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="edu__card-badge">In Progress</div>
+            <h3>Software Engineering</h3>
+            <p>Aptech Learning Institute</p>
+            <div class="edu__card-meta"><i class="fa-regular fa-calendar-check"></i> Daily Hands-on Practice</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu__right" data-reveal="right">
+        <div class="edu__focus-title">Core Competency Areas</div>
+        <div class="edu__focus-grid">
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> Salesforce Development</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> Salesforce Administration</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> Apex Classes &amp; Triggers</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> Salesforce Flow</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> HTML5 &amp; CSS3</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> JavaScript (ES6+)</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> LWC </div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> SQL </div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> n8n Automation</div>
+          <div class="edu__focus-item"><i class="fa-solid fa-check"></i> Prompt Engineering</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="services" class="section section--dark">
+  <div class="container">
+    <div class="section__header section__header--center" data-reveal>
+      <div class="section__badge section__badge--light">Services</div>
+      <h2 class="section__title section__title--light">How I Can Help</h2>
+      <p class="section__sub section__sub--light">Based on my actively growing skills — ideal for internships, entry-level CRM roles and freelance web projects.</p>
+    </div>
+
+    <div class="services__grid" data-reveal>
+      <div class="service-card" style="--delay:0">
+        <div class="service-card__num">01</div>
+        <div class="service-card__icon"><i class="fa-solid fa-user-gear"></i></div>
+        <h4>Salesforce Administration</h4>
+        <p>Org setup, user management, page layouts, validation rules and daily configuration tasks.</p>
+        <button type="button" class="service-card__btn" data-service-detail>View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div class="service-card" style="--delay:1">
+        <div class="service-card__num">02</div>
+        <div class="service-card__icon"><i class="fa-solid fa-code"></i></div>
+        <h4>Apex Development</h4>
+        <p>Custom Apex classes, test classes and triggers to extend Salesforce beyond declarative tools.</p>
+        <button type="button" class="service-card__btn" data-service-detail>View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div class="service-card" style="--delay:2">
+        <div class="service-card__num">03</div>
+        <div class="service-card__icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h4>Flow Automation</h4>
+        <p>Screen and record-triggered Flows for approvals, notifications and record update automation.</p>
+        <button type="button" class="service-card__btn" data-service-detail>View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div class="service-card" style="--delay:3">
+        <div class="service-card__num">04</div>
+        <div class="service-card__icon"><i class="fa-solid fa-sliders"></i></div>
+        <h4>Salesforce Configuration</h4>
+        <p>Custom objects, fields, record types and permission sets structured for real workflows.</p>
+        <button type="button" class="service-card__btn" data-service-detail>View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div class="service-card" style="--delay:4">
+        <div class="service-card__num">05</div>
+        <div class="service-card__icon"><i class="fa-solid fa-terminal"></i></div>
+        <h4>Prompt Engineering</h4>
+        <p>Fine-tuned prompt strategies to generate structured, accurate AI responses for software workflows.</p>
+        <button type="button" class="service-card__btn" data-service-detail>View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact__grid">
+      <!-- Left: Info -->
+      <div class="contact__info" data-reveal="left">
+        <div class="section__badge">Contact</div>
+        <h2 class="section__title">Let's Build Something Together</h2>
+        <p class="contact__desc">Open to internships, junior Salesforce roles and freelance projects. Reach out anytime.</p>
+
+        <div class="contact__items">
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div><span>Email</span><a href="mailto:atifzuhrani@gmail.com">atifzuhrani@gmail.com</a></div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div><span>Phone</span><a href="tel:03123621880">0312-3621880</a></div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><span>Location</span><p>Pakistan</p></div>
+          </div>
+        </div>
+
+        <div class="contact__socials">
+          <a href="https://github.com/atiffy01-netizen" target="_blank" rel="noopener" class="social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/atif-zuhrani-7a373640b" target="_blank" rel="noopener" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://trailhead.salesforce.com/today" target="_blank" rel="noopener" class="social-btn"><i class="fa-solid fa-cloud"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <form class="contact__form" id="contactForm" action="https://formspree.io/f/xrpqjloq" method="POST" data-reveal="right" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" name="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="Project Inquiry / Role Opportunity" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--glow btn--full">
+          <span>Send Message</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        <p class="form-note"><i class="fa-solid fa-shield-halved"></i> Secure via Formspree. Your message goes directly to my inbox.</p>
+        <div class="form-error" id="formError" role="alert">
+          <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+          <span id="formErrorText"></span>
+        </div>
+        <div class="form-success" id="formSuccess" role="status">
+          <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+          Message sent! I'll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <!-- Closing Message -->
+    <div class="footer__closing" data-reveal>
+      <span class="footer__closing-badge">Let's Connect</span>
+      <h2 class="footer__closing-title">Let's Build Something <em>Great</em> Together</h2>
+      <p>Have a project, role or idea in mind? I'm always open to a good conversation.</p>
+      <a href="#contact" class="btn btn--gold">
+        <span>Start a Conversation</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="footer__grid">
+      <!-- Branding -->
+      <div class="footer__brand" data-reveal="left">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-icon">M</span>
+          <span class="nav__logo-text">ATIF</span>
+        </a>
+        <p>Full Stack Developer &amp; Salesforce Specialist building clean, automated and scalable digital experiences.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/atif-zuhrani-7a373640b" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/atiffy01-netizen" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://trailhead.salesforce.com/today" target="_blank" rel="noopener" class="social-btn" aria-label="Trailhead"><i class="fa-solid fa-cloud"></i></a>
+          <a href="mailto:atifzuhrani@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="footer__col" aria-label="Quick links" data-reveal>
+        <h4>Quick Links</h4>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Services -->
+      <nav class="footer__col" aria-label="Services" data-reveal>
+        <h4>Services</h4>
+        <div class="footer__links">
+          <a href="#services">Salesforce Development</a>
+          <a href="#services">Web Development</a>
+          <a href="#services">AI Solutions</a>
+          <a href="#services">Consulting</a>
+        </div>
+      </nav>
+
+      <!-- Contact Me -->
+      <div class="footer__col" data-reveal="right">
+        <h4>Contact Me</h4>
+        <div class="footer__contact-list">
+          <div class="footer__contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:atifzuhrani@gmail.com">atifzuhrani@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:03123621880">0312-3621880</a>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pakistan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="footer__bar">
+    <div class="container footer__bar-inner">
+      <p>&copy; <span id="year">2026</span> M. Atif. All Rights Reserved.</p>
+      <span class="footer__bar-note">Crafted with precision</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Service details -->
+<div class="service-modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle" aria-hidden="true">
+  <div class="service-modal__backdrop" data-service-close></div>
+  <div class="service-modal__panel">
+    <button type="button" class="service-modal__close" data-service-close aria-label="Close service details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <div class="service-modal__icon" id="serviceModalIcon" aria-hidden="true"></div>
+    <h3 id="serviceModalTitle"></h3>
+    <p id="serviceModalDesc"></p>
+    <a href="#contact" class="btn btn--gold btn--sm" data-service-close>Discuss this service <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<!-- Scroll-to-top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Custom JS -->
+<script src="script.js" defer></script>
+</body>
+</html>
